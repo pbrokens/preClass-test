@@ -1,0 +1,111 @@
+* {
+	box-sizing:border-box;
+}
+
+body{
+	font-family:Helvetica, Arial, sans-serif;
+	background-color:rgb(200,200,200);
+	
+}
+
+h1{
+	font-size:3rem;
+	margin-top:0;
+}
+
+h2{
+	font-size:2rem;
+	font-weight:bold;
+	color:red;
+}
+
+p, ul, ol{
+	font-size:1rem;
+}
+
+p{
+	width:clamp(45ch, 70%, 75ch);
+}
+
+img{
+	max-width:100%;
+	height:auto;
+}
+
+a{
+	color:black;
+	font-weight:bold;
+	text-decoration-color:red;
+	text-decoration-thickness:0.25rem;
+}
+
+nav {
+	display:flex;
+	grid-column-start:4;
+	grid-column-end:9;
+}
+nav a{
+	display:inline-block;
+	color:white;
+	background-color: rgb(200, 50, 50);
+	font-size:1.25rem;
+	text-decoration:none;
+	padding: 0.25em 0.45em;
+	margin:0;
+	flex: 1 1 auto;
+}
+
+nav a:hover, nav a:focus{
+	background-color: rgb(200,200,200);
+	color:black;
+}
+
+.hero{
+	min-height:30rem;
+	background-image:url(../img/molteni-hero-1200.jpg);
+	background-size:cover;
+}
+.wrapper{
+	width:clamp(16rem, 100vw, 90rem);
+	padding:1rem;
+	margin-left:auto;
+	margin-right:auto;
+	display:grid;
+	grid-template-columns:repeat(4, 1fr);
+	grid-template-rows:repeat(3, auto);
+	grid-gap:1em;
+}
+
+.wrapper section{
+	background:white;
+	padding:1rem;
+}
+
+#intro{
+	grid-column:1 / span 5;
+}
+
+#d1563{
+	grid-column-start:1;
+	grid-column-end:3;
+	grid-row-start:2;
+
+}
+
+#leggera{
+	grid-column-start:3;
+	grid-column-end:5;
+	grid-row-start:2;
+}
+
+header{
+	background-color:#ccc;
+	display:grid;
+	grid-template-columns:repeat(8, 1fr);
+	grid-template-rows:1fr auto;
+	align-items:center;
+	height:content;
+}
+
+
+

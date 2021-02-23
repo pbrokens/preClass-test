@@ -1,0 +1,105 @@
+<!doctype html>
+
+
+
+<html lang="en">
+<!-- 
+  The doctype declaration above indicates that this website is built using HTML5. Additionally, the HTML tag opens and closes our page as a whole. 
+
+  Remember, the general structure for HTML tags is: <tag attr="value" attr2="value2"></tag>
+
+  <tag> = the name of the tag being called
+  attr/attr2 = different kinds of attributes (settings) for the tag
+  value/value2 = values for the attributes that are being set within the tag
+  </tag> = the closing of the tag; note that some tags are self-closing (more on that later)
+-->
+
+
+<!-- This section helps define what a browser needs to know about our webpage, overarching information about the page -->
+	<head>
+		<!-- This defines what character set (language/fonts) are used by this webpage -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Our title tag simply applies a title to the page -->
+		<title>Default Template</title>
+		<!-- This default emtpy HTML starter template was created for IAT 339 Students by Paul Brokenshire -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<!-- The body section is where we place all of our public-intended content that will be visible in the browser-->
+	<body>
+		<header>
+			<!-- take note of the file path here. Note that it is written from the perspective of the html file we are working on and points to the img folder and then the file -->
+		    <img src="img/logo-placeholder-100.png" alt="it's literaly a placeholder" width="75" height="75">  
+		    <!-- 
+		    	The alt attribute is required for all images used in this course and should accurately describ the image. This makes it usable and accessible to people with visual impairments. Get used to doing this by default.
+
+		    	The width and height attributes are not writing style in html. They are describing content. In this case describing the size of the image file. However if you wrote these smaller or larger than the actual file then you would be styling.
+		    --> 
+			
+			<nav> 
+				<!-- 
+		        Anchor tags that start with a hashtag (#) refer to an ID attribute on the existing page, they are useful for linking to different positions on the same page
+		      	-->
+				<a href="#intro">An introduction</a> 
+				<a href="#d1563">D.156.3 Armchair</a>
+				<a href="#leggera">Super Leggera </a>
+			</nav>
+
+			
+		</header>
+		<section class="hero">
+			<!-- <img class="hero" src="img/molteni-hero-1200.jpg" width="1200" height="645" alt="Two d.156.3 armchairs facing each other in a room with grey curtains" > -->
+			<div class="hero-text">
+			<h2>Craftsmanship for the Masses</h2>
+			<p>Gio Ponti's chairs exhibit the attention to detail and fine workmanship of the Italian craftsman, married with technological and manufacturing innovation that brings a quality chair to the masses.</p>
+			<a class="cta-main" hre="#">Get your's now</a> 
+			</div>
+		</section>
+
+		<!-- Sections help to define the semantic structure of our site, which is, ultimately, up to us -->
+		<main class="wrapper">
+		<section id="intro">
+			 <!-- Remember that HTML includes 6 levels of headings. You should make sure to maintain the visual hierarchy of your type. Don't make h2 bigger than h1 -->
+			<h1>The Chairs of Gio Ponti</h1>
+
+			<p><strong>In pursuit of the ultimate ideal of seating.</strong> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		</section><!-- end of #intro -->
+
+		<!-- id attributes are unique and can only be used once per page. -->
+		<section id="d1563">
+			<h2>The D.156.3 Armchair</h2>
+			<figure>
+			<img src="img/d1563-onWhite-600.jpg" alt="A closeup of a brown and beige d1563 chair on a white background" width="600" height="420">
+			<figcaption><a href="https://classicdesign.it/d-156-3-armchair-molteni-amp-c.html">D.156.3 by Gio Ponti for Altamira.</a></figcaption>
+			</figure>
+
+			<p>Designed by Gio Ponti and produced for Altamira, an American company founded by the nephew of the Spaniard De Cuevas, was displayed in the company’s showroom in New York, along with furniture by Ico Parisi, Franco Albini, Carlo De Carli, Ignazio Gardella and others, chosen from among the most representative exhibitors at the 10th Milan Triennale.</p>
+
+			<ol>
+			<li>Height: 34”</li>
+			<li>Width: 28”</li>
+			<li>Depth: 38.25”</li>
+			</ol>
+		</section><!-- end of #d.156.3 -->
+
+		<section id="leggera">
+			<h2>The Superleggera</h2>
+
+			<a href="https://www.cassina.com/en/collection/chairs/699-superleggera"><img src="img/superleggera-600.jpg" alt="A black superleggera set in front of a concrete wall" width="600" height="600"></a>
+
+			<p>While the frame exploits the inherent lightness and flexibility of ashwood, the seat surround is in beech, which is more close-grained and stronger. The wood parts are created by machine, and hand-finished, glue being applied with a brush, the excess being wiped off, and the seat being hand-woven. Thus do crafts expertise and industrial innovation come together in what we could call a “prime object”, informed by the chair-making traditions of Chiavari, in Liguria, northern Italy.</p>
+
+			<h3>Key Characteristics</h3>
+			<ul>
+			<li>Lightweight</li>
+			<li>Durable</li>
+			<li>Comfortable</li>
+			</ul>
+		</section><!-- end of #legera -->
+	</main>
+	</body>
+
+</html>
